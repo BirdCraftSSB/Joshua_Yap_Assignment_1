@@ -1,0 +1,743 @@
+{
+	"ambient": {
+		"x": 0.10000000149011612,
+		"y": 0.10000000149011612,
+		"z": 0.10000000149011612
+	},
+	"default_material": "null",
+	"lights": [
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 100.0
+		},
+		{
+			"color": {
+				"x": 0.20000000298023224,
+				"y": 0.800000011920929,
+				"z": 0.10000000149011612
+			},
+			"position": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 3.0
+			},
+			"range": 4.0
+		},
+		{
+			"color": {
+				"x": 1.0,
+				"y": 0.20000000298023224,
+				"z": 0.10000000149011612
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 4.0
+		}
+	],
+	"main_camera": "e2beb16c-58a8-2445-ac9c-bfadce6e1b62",
+	"objects": [
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Camera": {
+					"clear_color": {
+						"w": -431602080.0,
+						"x": -431602080.0,
+						"y": -431602080.0,
+						"z": -431602080.0
+					},
+					"enabled": true,
+					"far_plane": 1000.0,
+					"fov_radians": 1.5707963705062866,
+					"guid": "e2beb16c-58a8-2445-ac9c-bfadce6e1b62",
+					"near_plane": 0.10000000149011612,
+					"ortho_enabled": false,
+					"ortho_size": 10.0
+				},
+				"SimpleCameraControl": {
+					"enabled": true,
+					"guid": "25e0a9c7-c140-5d4e-9316-549af85d0cfb",
+					"mouse_sensitivity": {
+						"x": 0.5,
+						"y": 0.30000001192092896
+					},
+					"move_speed": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"shift_mult": 2.0
+				}
+			},
+			"guid": "330f8236-6016-c541-9b9c-ac5a387d120c",
+			"hide_in_inspector": false,
+			"name": "Main Camera",
+			"parent": "null",
+			"position": {
+				"x": -4.0,
+				"y": -5.0,
+				"z": 6.0
+			},
+			"rotation": {
+				"w": 0.8658177852630615,
+				"x": 0.3752252161502838,
+				"y": -0.13162189722061157,
+				"z": -0.30371251702308655
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::RigidBody": {
+					"angular_damping": 0.004999999888241291,
+					"colliders": [
+						{
+							"extents": {
+								"x": 50.0,
+								"y": 50.0,
+								"z": 1.0
+							},
+							"guid": "bf038646-5955-ef42-a293-579338c4bf04",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -1.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "ea3a3bac-7234-5c42-9093-a28c74a677c7",
+					"linear_damping": 0.0,
+					"mask": -1,
+					"mass": 1.0,
+					"type": "Static"
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "e264ffa4-eecf-0845-8879-adb40d02dee1",
+					"material": "3845b761-3c92-8340-b4ea-3239541d4497",
+					"mesh": "b9d0c6a4-55c7-9643-b911-84f4a04ac018"
+				}
+			},
+			"guid": "6945eb23-8046-ad42-a52c-fdd1ab1310d9",
+			"hide_in_inspector": false,
+			"name": "Plane",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::TriggerVolume": {
+					"colliders": [
+						{
+							"extents": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"guid": "0b2cb6db-6969-b844-91bb-a11bb264dd2f",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "4033a889-140a-8242-a2fa-4a893c7ae027",
+					"mask": -1
+				},
+				"JumpBehaviour": {
+					"enabled": true,
+					"guid": "df82ef14-b71f-7d4a-bbea-379810b046c7",
+					"impulse": 10.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "73faee71-b782-a343-aec6-31a04154614e",
+					"material": "3845b761-3c92-8340-b4ea-3239541d4497",
+					"mesh": "59b2e720-777d-ae42-8ec0-6b60cda91a6d"
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "e695fa9a-a53c-5b4c-a3ec-259b45b7159c"
+				}
+			},
+			"guid": "b98f9019-adae-d846-86ab-1629599e0a77",
+			"hide_in_inspector": false,
+			"name": "Barrel",
+			"parent": "null",
+			"position": {
+				"x": 1.5,
+				"y": 0.0,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.7071067690849304,
+				"x": 0.7071067690849304,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::TriggerVolume": {
+					"colliders": [
+						{
+							"extents": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"guid": "01f76831-d5ae-6e42-abcd-97d967f485d9",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "542a41bc-8353-8f42-a31f-b12adbf927e0",
+					"mask": -1
+				},
+				"JumpBehaviour": {
+					"enabled": true,
+					"guid": "46cc651b-53a6-2444-969f-54ec008ad291",
+					"impulse": 10.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "4a956ea1-07b0-4c46-9fe6-6cbbd0379c9c",
+					"material": "a3c5f846-d48c-6648-8da6-7f389d8175a0",
+					"mesh": "2e5d2e1b-dba1-7d4e-92bc-dec0d889b7d3"
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "073665c9-aba6-f04f-a4b4-b660035e399a"
+				}
+			},
+			"guid": "08322e3d-979f-7d46-87a6-42a4a3ff3643",
+			"hide_in_inspector": false,
+			"name": "Vase",
+			"parent": "null",
+			"position": {
+				"x": -2.0,
+				"y": 0.0,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.6644629836082458,
+				"x": 0.6644629836082458,
+				"y": 0.24184474349021912,
+				"z": 0.24184474349021912
+			},
+			"scale": {
+				"x": 2.0,
+				"y": 2.0,
+				"z": 2.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::TriggerVolume": {
+					"colliders": [
+						{
+							"extents": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"guid": "8be9a5f5-7bc8-b44b-84cc-f90b58309fe6",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "9c50b4d5-aed9-0345-b363-f5e1646db8da",
+					"mask": -1
+				},
+				"JumpBehaviour": {
+					"enabled": true,
+					"guid": "acec372d-c7ea-ee4d-a7f3-1822711cca25",
+					"impulse": 10.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "b79dbcae-1d58-6d46-8ca1-d0c015c922d3",
+					"material": "8650e4b2-74ce-8a4a-a62c-cf5caa433202",
+					"mesh": "0b18e651-4d07-2749-aa95-424dbe72cfa5"
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "a237792e-1ea4-b64a-b996-1a0413792dfb"
+				}
+			},
+			"guid": "6e85b119-bade-e44b-b685-bf8568e8721d",
+			"hide_in_inspector": false,
+			"name": "Mug",
+			"parent": "null",
+			"position": {
+				"x": 1.5,
+				"y": 0.0,
+				"z": 5.0
+			},
+			"rotation": {
+				"w": 0.7071067690849304,
+				"x": 0.7071067690849304,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::TriggerVolume": {
+					"colliders": [
+						{
+							"extents": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"guid": "4b1d67bc-9799-1a4f-8fe4-b8a3df759d90",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "b8090ce2-4482-6b49-848f-d049e6b6381e",
+					"mask": -1
+				},
+				"JumpBehaviour": {
+					"enabled": true,
+					"guid": "fc2af05c-dc6c-914a-be93-5ac4f61036cf",
+					"impulse": 10.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "9d765653-3541-3e44-a7e9-44a11f670182",
+					"material": "8650e4b2-74ce-8a4a-a62c-cf5caa433202",
+					"mesh": "d1a63165-3e4f-8343-b145-dc47ce3f3338"
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "ed79e6a2-7d23-5d4c-83e7-75841e9474f0"
+				}
+			},
+			"guid": "a3da5bd0-99d0-0a4c-991a-cceae25746fa",
+			"hide_in_inspector": false,
+			"name": "Knife",
+			"parent": "null",
+			"position": {
+				"x": 1.5,
+				"y": -2.0,
+				"z": 1.5
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 0.25,
+				"y": 0.10000000149011612,
+				"z": 0.10000000149011612
+			}
+		},
+		{
+			"children": [
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "0955d51d-178c-5549-98e0-812c49773252",
+							"material": "a3c5f846-d48c-6648-8da6-7f389d8175a0",
+							"mesh": "62b696fe-e2d7-3548-9c29-bcf2e45092a5"
+						}
+					},
+					"guid": "56c27ec3-194c-ec4e-baaa-18f3d2c304b4",
+					"hide_in_inspector": false,
+					"name": "Specular Object",
+					"parent": "3b7e2200-fb39-b848-acdd-bfae594f355d",
+					"position": {
+						"x": 0.0,
+						"y": -4.0,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "bfac151c-c462-4c40-93fa-08100d63ecf4",
+							"material": "e18dbcda-35a3-834a-86b7-6f8d8ee83d46",
+							"mesh": "90894943-96bd-6446-8051-64cbdd95abf8"
+						}
+					},
+					"guid": "ab7cc9e1-2131-e34e-bf6e-a6ac5c530e37",
+					"hide_in_inspector": false,
+					"name": "Toon Object",
+					"parent": "3b7e2200-fb39-b848-acdd-bfae594f355d",
+					"position": {
+						"x": -2.0,
+						"y": -4.0,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				}
+			],
+			"components": null,
+			"guid": "3b7e2200-fb39-b848-acdd-bfae594f355d",
+			"hide_in_inspector": false,
+			"name": "Demo Parent",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "0955d51d-178c-5549-98e0-812c49773252",
+					"material": "a3c5f846-d48c-6648-8da6-7f389d8175a0",
+					"mesh": "62b696fe-e2d7-3548-9c29-bcf2e45092a5"
+				}
+			},
+			"guid": "56c27ec3-194c-ec4e-baaa-18f3d2c304b4",
+			"hide_in_inspector": false,
+			"name": "Specular Object",
+			"parent": "3b7e2200-fb39-b848-acdd-bfae594f355d",
+			"position": {
+				"x": 0.0,
+				"y": -4.0,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "bfac151c-c462-4c40-93fa-08100d63ecf4",
+					"material": "e18dbcda-35a3-834a-86b7-6f8d8ee83d46",
+					"mesh": "90894943-96bd-6446-8051-64cbdd95abf8"
+				}
+			},
+			"guid": "ab7cc9e1-2131-e34e-bf6e-a6ac5c530e37",
+			"hide_in_inspector": false,
+			"name": "Toon Object",
+			"parent": "3b7e2200-fb39-b848-acdd-bfae594f355d",
+			"position": {
+				"x": -2.0,
+				"y": -4.0,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::TriggerVolume": {
+					"colliders": [
+						{
+							"guid": "81829cfa-de20-9340-9a15-8fe5c020ed1e",
+							"half_extents": {
+								"x": 3.0,
+								"y": 3.0,
+								"z": 1.0
+							},
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.5
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Cylinder"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "1461ff03-dba9-b045-9089-76a11e33f3c1",
+					"mask": -1
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "c3dba0fb-b7aa-1a47-bbc8-1d245eb657b8"
+				}
+			},
+			"guid": "9bdc604b-1e19-b14c-a3cc-630cae9fd270",
+			"hide_in_inspector": false,
+			"name": "Trigger",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"ParticleSystem": {
+					"emitters": [
+						{
+							"color": {
+								"w": 1.0,
+								"x": 0.0,
+								"y": 1.0,
+								"z": 0.0
+							},
+							"cone_angle": 0.0,
+							"lifetime_range": {
+								"x": 2.0,
+								"y": 4.0
+							},
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"spawn_rate": 0.10000000149011612,
+							"velocity": {
+								"x": 0.0,
+								"y": -1.0,
+								"z": 10.0
+							}
+						}
+					],
+					"enabled": true,
+					"gravity": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": -9.8100004196167
+					},
+					"guid": "c0a1acf6-d6ce-c143-9830-ae142431400c",
+					"max_particles": 1000
+				}
+			},
+			"guid": "7acfca50-3969-ab47-a852-cea8882b8bc6",
+			"hide_in_inspector": false,
+			"name": "Particles",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		}
+	],
+	"skybox": {
+		"mesh": "null",
+		"orientation": {
+			"w": 0.7071067690849304,
+			"x": 0.7071067690849304,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"shader": "a89e5c04-e84b-004d-8dc2-73b0072937d3",
+		"texture": "1d81187c-28c9-4344-9a9c-987439515387"
+	}
+}
